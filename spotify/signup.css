@@ -1,0 +1,202 @@
+.navbar{
+  /* background-color: black; */
+  border-radius: 30px;
+  
+}
+.navbar ul{
+  overflow: auto;
+}
+.navbar li{
+  float:left;
+  list-style: none; 
+  margin: 13px 20px;
+  
+}
+.navbar li a{
+  padding: 3px 3px;
+  text-decoration: none;
+  color: gray;
+  font-size: 25px;
+}
+.navbar li a:hover{
+  color: black;
+}
+.login {
+  background-color: rgb(46, 46, 123);
+  /* border: 2px solid white; */
+  /* margin: -476px 780px; */
+  padding: 75px;
+  width: 33%;
+  border-radius: 28px;
+}
+
+.form-group input {
+  text-align: center;
+  display: block;
+  width: 508px;
+  padding: 1px;
+  border: 2px solid black;
+  margin: 11px auto;
+  font-size: 25px;
+  border-radius: 8px;
+}
+
+.login h1 {
+  text-align: center;
+}
+
+.login button {
+  display: block;
+  width: 74%;
+  margin: 3px;
+  cursor: pointer;
+}
+
+/* body{
+  /* background-color: black; */
+
+
+.psw{
+  color: white;
+  margin: 2px 3px;
+}
+
+.psw a{
+  color: blue;
+  margin: 2px 3px;
+  
+}
+.fb{
+  margin-left: 600px;
+  margin-top: 20px;
+}
+.fb a{
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: 16px;
+  color: white;
+}
+button{
+  background-color: rgb(59, 89, 152);
+  border-radius: 20px;
+  width: 400px;
+  height: 45px;
+}
+
+.apple{
+  margin-left: 600px;
+  margin-top: 10px;
+}
+.apple a{
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: 16px;
+  color: white;
+}
+.button2{
+  background-color: black;
+  border-radius: 20px;
+  width: 400px;
+  height: 45px;
+}
+.google{
+  margin-left: 600px;
+  margin-top: 10px;
+}
+.google a{
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: 16px;
+  color: grey;
+}
+.button3{
+  background-color: white;
+  border-radius: 20px;
+  width: 400px;
+  height: 45px;
+}
+.mobile{
+  margin-left: 600px;
+  margin-top: 10px;
+}
+.mobile a{
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: 16px;
+  color: grey;
+}
+.button4{
+  background-color: white;
+  border-radius: 20px;
+  width: 400px;
+  height: 45px;
+}
+.or1{
+  margin-top: 25px;
+  margin-left: -153px;
+}
+.or2{
+  margin-top: -11px;
+  margin-left: 300px;
+}
+h4{
+  margin-left: 784px;
+  margin-top: -18px;
+}
+p{
+  margin-left: 600px;
+}
+.email{
+  margin-top: -10px;
+  margin-left: 600px;
+}
+#email{
+  
+  width: 400px;
+  height: 40px;
+}
+::placeholder{
+  font-size: 18px;
+  color: grey;
+}
+.name{
+  margin-top: -10px;
+  margin-left: 600px;
+}
+#name{
+  
+  width: 400px;
+  height: 40px;
+}
+::placeholder{
+  font-size: 18px;
+  color: grey;
+}
+.dob{
+  margin-top: -10px;
+  margin-left: 600px;
+}
+#dob{
+  
+  width: 400px;
+  height: 40px;
+}
+form{
+  margin-left: 590px;
+  font-size: 18px;
+}
+.btn{
+  background-color: #1DB954;
+  font-size: 14px;
+  color: white;
+  line-height: 1;
+  border-radius: 500px;
+  margin-left: 750px;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 120px;
+}
+.btn a{
+  color: white;
+  text-decoration: none;
+}
