@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+            <nav class="navbar">
+                <ul>
+                    <li><a class="active" href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="premium.html">Premium</a></li>
+                    <li><a href="openpage.html">Log out</a></li>
+                    <div class="search">
+                        <input type="text" name="search" id="search" placeholder="Search Songs">
+                    </div>
+                </ul>
+            </nav>
+        
+        <div id="left">
+            <nav class="leftbar">
+                <ul>
+                    <li><a href="#">Create Playlist</a></li>
+                    <li><a href="#">Liked Songs</a></li>
+                    <li><a href="#">Downloads</a></li>
+                    <li><a href="#">Recent</a></li>
+                    <li><a href="#">Settings</a></li>
+
+                </ul>
+            </nav>
+
+            <nav class="bottombar">
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Terms and <br>Services</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </nav>
+            
+            <div id="body">
+                <div class="wrapper">
+                    <div class="top-bar">
+                        <i class="material-icons">expand_more</i>
+                        <span>Now Playing</span>
+                        <i class="material-icons">more_horiz</i>
+                    </div>
+                    <div class="img-area">
+                        <img src="" alt="">
+                    </div>
+                    <div class="song-details">
+                        <p class="name"></p>
+                        <p class="artist"></p>
+                    </div>
+                    <div class="fav">
+                        <i id="fav" class="material-icons">favorite</i>
+                    </div>
+                    <div class="progress-area">
+                        <div class="progress-bar">
+                            <audio id="main-audio" src=""></audio>
+                        </div>
+                        <div class="song-timer">
+                            <span class="current-time">0:00</span>
+                            <span class="max-duration">0:00</span>
+                        </div>
+                    </div>
+                    <div class="controls">
+                        <i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i>
+                        <i id="prev" class="material-icons">skip_previous</i>
+                        <div class="play-pause">
+                            <i class="material-icons play">play_arrow</i>
+                        </div>
+                        <i id="next" class="material-icons">skip_next</i>
+                        <i id="more-music" class="material-icons">queue_music</i>
+                    </div>
+                    <div class="music-list">
+                        <div class="header">
+                            <div class="row">
+                                <i class="list material-icons">queue_music</i>
+                                <span>Music list</span>
+                            </div>
+                            <i id="close" class="material-icons">close</i>
+                        </div>
+                        <ul>
+                            <!-- here li list are coming from js -->
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="th">
+                <h3><strong>&emsp;TOP HITS</strong></h3>
+            </div>
+            <div class="india">
+                <H3><strong>India's Best</strong></H3>
+            </div>
+            <div class="Punjabi">
+                <H3><strong>Punjabi's Hits</strong></H3>
+            </div>
+            <div class="Pop">
+                <H3><strong>Pop's Hits</strong></H3>
+            </div>
+            <div class="Rockh">
+                <H3><strong>Classic Rock</strong></H3>
+            </div>
+            <!-- <div class="artistsh">
+                <H3><strong>Popular artists</strong></H3>
+            </div> -->
+
+            
+            <div class="Top50">
+                <a href="top50.html">
+                    <img src="images/top50.jpg" width="100" height="100">
+                </a>
+
+            </div>
+
+            <div class="Ind">
+                <a href="Top50Ind.html">
+                    <img src="images/Ind.jpg" width="100" height="100">
+                </a>
+
+            </div>
+
+            <div class="logo">
+                <img src="images/logo.png" width="auto" height="50">
+            </div>
+
+            <div class="rock">
+                <a href="rock.html">
+                    <img src="images/rock.jpg" width="100" height="100">
+                </a>
+
+            </div>
+            <div class="hits">
+                <a href="hit.html">
+                    <img src="images/hits.jpg" width="100" height="100">
+                </a>
+            </div>
+            <div class="today">
+                <a href="today.html">
+                    <img src="images/today.jpg" width="100" height="100">
+                </a>
+            </div>
+            <div class="ms">
+                <a href="missedhits.html">
+                    <img src="images/missed.png" width="100" height="100">
+                </a>
+            </div>
+            <div class="ph">
+                <h3><strong>TOP PODCASTS</strong></h3>
+            </div>
+            <div class="p1">
+                <a href="podcast.html">
+                    <img src="images/pod1.jpg" width="100" height="100">
+                </a>
+            </div>
+            <div class="p2">
+                <a href="podcast.html">
+                    <img src="images/pod2.jpg" width="100" height="100">
+                </a>
+            </div>
+            <div class="p3">
+                <a href="podcast.html">
+                    <img src="images/pod3.jpg" width="100" height="100">
+                </a>
+            </div>
+            <div class="p4">
+                <a href="podcast.html">
+                    <img src="images/pod4.jpg" width="100" height="100">
+                </a>
+            </div>
+            <div class="p5">
+                <a href="podcast.html">
+                    <img src="images/pod5.jpg" width="100" height="100">
+                </a>
+            </div>
+            <div class="p6">
+                <a href="podcast.html">
+                    <img src="images/pod6.jpg" width="100" height="100">
+                </a>
+            </div>
+            <div class="bolly">
+                <a href="bollywood.html">
+                    <img src="images/bollywood1.jpg" width="100" height="100">
+                </a>
+            </div>
+            <div class="bolly2">
+                <a href="bollywood.html">
+                    <img src="images/bolly2.jpg" width="100" height="100">
+                </a>
+            </div>
+            <div class="bolly3">
+                <a href="bollywood.html">
+                    <img src="images/bolly3.jpg" width="100" height="100">
+                </a>
+            </div>
+            <div class="pun1">
+                <a href="punjabi.html">
+                    <img src="images/pun1.jpg" width="100" height="100">
+                </a>
+            </div>
+            <div class="pun2">
+                <a href="punjabi.html">
+                    <img src="images/pun2.jpg" width="100" height="100">
+                </a>
+            </div>
+            <div class="pun3">
+                <a href="punjabi.html">
+                    <img src="images/pun3.jpg" width="100" height="100">
+                </a>
+            </div>
+            <div class="pop1">
+                <a href="pop.html">
+                    <img src="images/pop1.jpg" width="100" height="100">
+                </a>
+            </div>
+            <div class="pop2">
+                <a href="pop.html">
+                    <img src="images/pop2.jpg" width="100" height="100">
+                </a>
+            </div>
+            <div class="pop3">
+                <a href="pop.html">
+                    <img src="images/pop3.jpg" width="100" height="100">
+                </a>
+            </div>
+            <div class="rock1">
+                <a href="rock.html">
+                    <img src="images/rock1.jpg" width="100" height="100">
+                </a>
+            </div>
+            <div class="rock2">
+                <a href="rock.html">
+                    <img src="images/rock2.jpg" width="100" height="100">
+                </a>
+            </div>
+            <!-- <div class="a1">
+                <a href="artists.html">
+                    <img src="images/a1.jpg" width="100" height="100">
+                </a>
+            </div> -->
+            
+
+
+
+
+            <script src="js/music-list.js"></script>
+            <script src="js/script.js"></script>
+            <footer>
+                <p>Copyright:&copy Reserved by JJ Corporation
+                </p>
+            </footer>
+
+</body>
+
+</html>
+</body>

@@ -1,0 +1,1191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+.navbar {
+    
+    border-radius: 30px;
+
+}
+
+.navbar ul {
+    /* position: fixed; */
+    background-color: whitesmoke;
+    overflow: auto;
+    margin-top: -2px;
+    /* width: 80%; */
+}
+
+.navbar li {
+    float: left;
+    list-style: none;
+    margin: 39px 40px;
+
+}
+
+.navbar li a {
+    padding: 3px 3px;
+    text-decoration: none;
+    color: rgb(35, 35, 35);
+    font-size: 30px;
+}
+
+.navbar li a:hover {
+    color: black;
+}
+
+.search {
+    float: right;
+    color: white;
+    padding: 12px 80px;
+    margin-right: 20px;
+    margin-top: 30px;
+    margin-left: 360px;
+}
+
+.navbar input {
+    border: 2px solid black;
+    border-radius: 14px;
+    padding: 3px 31px;
+    width: 158px;
+    font-size: 17px;
+}
+
+.navbar input[type="text"]::placeholder {
+    padding-left: 15px;
+    /* align-items: center; */
+    font-size: 20px;
+}
+
+
+
+#left {
+    margin: 80px 6px;
+    background-color: black;
+    width: 17%;
+    height: 300px;
+    margin-top: 60px;
+    position: fixed;
+
+}
+
+
+
+.leftbar li {
+    list-style: none;
+    margin: 39px -16px;
+}
+
+.leftbar li a {
+    padding: 3px 3px;
+    text-decoration: none;
+    color: gray;
+    font-size: 25px;
+}
+
+.leftbar li a:hover {
+    color: white;
+}
+
+.bottombar {
+    background-color: black;
+    margin: -10px 6px;
+
+    width: 94%;
+    height: 55%;
+
+}
+
+
+
+.bottombar li {
+    list-style: none;
+    margin: 19px -16px;
+}
+
+.bottombar li a {
+    padding: 3px 3px;
+    text-decoration: none;
+    color: gray;
+    font-size: 25px;
+    margin: -7px;
+}
+
+.bottombar li a:hover {
+    color: white;
+}
+
+body {
+    background-color: black;
+    /* background-image: url('images/bg.jpg'); */
+
+    /* background-position: center; */
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+    height: 50px;
+
+}
+.menu{
+    visibility: hidden;
+}
+
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --pink: #ff74a4;
+    --violet: #9f6ea3;
+    --lightblack: #515C6F;
+    --white: #ffffff;
+    --darkwhite: #cecaca;
+    --pinkshadow: #ffcbdd;
+    --lightbshadow: rgba(0, 0, 0, 0.15);
+}
+.music-list{
+    margin-top: 200px;
+}
+
+
+.wrapper {
+    width: 340px;
+    padding: 2px 4px;
+    overflow: hidden;
+    /* position: fixed; */
+    border-radius: 15px;
+    background: var(--white);
+    box-shadow: 0px 6px 15px var(--lightbshadow);
+    margin: -550px 1000px;
+    /* background-color: black */
+}
+
+.wrapper i {
+    cursor: pointer;
+}
+
+.top-bar,
+.progress-area .song-timer,
+.controls,
+.music-list .header,
+.music-list ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-bar i {
+    font-size: 30px;
+    color: var(--lightblack);
+}
+
+.top-bar i:first-child {
+    margin-left: -7px;
+}
+
+.top-bar span {
+    font-size: 18px;
+    margin-left: -3px;
+    color: var(--lightblack);
+}
+
+.img-area {
+    width: 100%;
+    height: 256px;
+    overflow: hidden;
+    margin-top: 0px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 12px var(--lightbshadow);
+}
+
+.img-area img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.song-details {
+    text-align: center;
+    margin: -18px 0;
+}
+
+.song-details p {
+    color: var(--lightblack);
+}
+
+.song-details .name {
+    font-size: 21px;
+    height: 0px;
+}
+
+.song-details .artist {
+    font-size: 15px;
+    opacity: 0.9;
+    line-height: 12px;
+    width: 206px;
+    margin-left: 71px;
+
+}
+
+.progress-area {
+    height: 6px;
+    width: 100%;
+    border-radius: 50px;
+    background: #f0f0f0;
+    cursor: pointer;
+    margin-top: 43px;
+}
+
+.progress-area .progress-bar {
+    height: inherit;
+    width: 0%;
+    position: relative;
+    border-radius: inherit;
+    background: linear-gradient(90deg, var(--pink) 0%, var(--violet) 100%);
+}
+
+.progress-bar::before {
+    content: "";
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    top: 50%;
+    right: -5px;
+    z-index: 2;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-50%);
+    background: inherit;
+    transition: opacity 0.2s ease;
+}
+
+.progress-area:hover .progress-bar::before {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.progress-area .song-timer {
+    margin-top: 2px;
+}
+
+.song-timer span {
+    font-size: 13px;
+    color: var(--lightblack);
+}
+
+.controls {
+    margin: 19px 0 5px 0;
+}
+
+.controls i {
+    font-size: 28px;
+    user-select: none;
+    background: linear-gradient(var(--pink) 0%, var(--violet) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.controls i:nth-child(2),
+.controls i:nth-child(4) {
+    font-size: 43px;
+}
+
+.controls #prev {
+    margin-right: -13px;
+}
+
+.controls #next {
+    margin-left: -13px;
+}
+
+.controls .play-pause {
+    height: 54px;
+    width: 54px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: linear-gradient(var(--white) 0%, var(--darkwhite) 100%);
+    box-shadow: 0px 0px 5px var(--pink);
+}
+
+.play-pause::before {
+    position: absolute;
+    content: "";
+    height: 43px;
+    width: 43px;
+    border-radius: inherit;
+    background: linear-gradient(var(--pink) 0%, var(--violet) 100%);
+}
+
+.play-pause i {
+    height: 43px;
+    width: 43px;
+    line-height: 43px;
+    text-align: center;
+    background: inherit;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+}
+
+.music-list {
+    position: absolute;
+    background: var(--white);
+    width: 100%;
+    left: 0;
+    bottom: -55%;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 5;
+    padding: 15px 30px;
+    border-radius: 15px;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.15s ease-out;
+}
+
+.music-list.show {
+    bottom: 0;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.header .row {
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+    color: var(--lightblack);
+}
+
+.header .row i {
+    cursor: default;
+}
+
+.header .row span {
+    margin-left: 5px;
+}
+
+.header #close {
+    font-size: 22px;
+    color: var(--lightblack);
+}
+
+.music-list ul {
+    margin: 10px 0;
+    max-height: 260px;
+    overflow: auto;
+}
+
+.music-list ul::-webkit-scrollbar {
+    width: 0px;
+}
+
+.music-list ul li {
+    list-style: none;
+    display: flex;
+    cursor: pointer;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    color: var(--lightblack);
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.music-list ul li:last-child {
+    border-bottom: 0px;
+}
+
+.music-list ul li .row span {
+    font-size: 17px;
+}
+
+.music-list ul li .row p {
+    opacity: 0.9;
+}
+
+ul li .audio-duration {
+    font-size: 16px;
+}
+
+ul li.playing {
+    pointer-events: none;
+    color: var(--violet);
+}
+
+.fav {
+    /* z-index: -1; */
+    color: black;
+    margin-left: 300px;
+    margin-top: -40px;
+    width: 2px;
+    height: 1px;
+}
+
+.fav:hover {
+    cursor: pointer;
+}
+
+.Top50 {
+    position: absolute;
+    /* background-color: black; */
+    /* z-index: -1; */
+    top: 40px;
+    left: 275px;
+    cursor: pointer;
+    width: 6%;
+}
+
+.Ind {
+    position: absolute;
+    /* z-index: -1; */
+    /* margin: -372px 200px; */
+    top: 40px;
+    left: 410px;
+    cursor: pointer;
+    width: 5%;
+}
+
+.logo {
+    /* position: fixed; */
+    margin-top: -100px;
+    cursor: pointer;
+    width: 7%;
+}
+
+.rock {
+    /* z-index: -1; */
+    position: absolute;
+    top: 170px;
+    left: 275px;
+    cursor: pointer;
+    width: 6%;
+}
+
+.hits {
+    /* z-index: -1; */
+    position: absolute;
+    cursor: pointer;
+    left: 410px;
+    /* top: -170px; */
+    width: 6%;
+    top: 170px;
+    visibility: hidden;
+}
+
+.today {
+    /* z-index: -1; */
+    position: absolute;
+    cursor: pointer;
+    left: 275px;
+    width: 6%;
+    top: 300px;
+}
+.bolly{
+    /* z-index: -1; */
+    visibility: hidden;
+}
+
+.ms {
+    /* z-index: -1; */
+    position: absolute;
+    cursor: pointer;
+    left: 410px;
+    width: 6%;
+    top: 300px;
+}
+
+.th h3 {
+    position: absolute;
+    /* background-color: white; */
+    width: 80%;
+    margin-left: 300px;
+    top: -55px;
+    font-size: 30px;
+    color: white;
+    /* visibility: hidden; */
+}
+.india {
+    visibility: hidden;
+}
+
+.p1 {
+    /* z-index: -1; */
+    position: absolute;
+    top: 40px;
+    left: 640px;
+    cursor: pointer;
+    width: 6%;
+}
+
+.p2 {
+    /* z-index: -1; */
+    position: absolute;
+    top: 40px;
+    left: 800px;
+    cursor: pointer;
+    width: 6%;
+}
+
+.p3 {
+    /* z-index: -1; */
+    position: absolute;
+    top: 170px;
+    left: 640px;
+    cursor: pointer;
+    width: 6%;
+}
+
+.p4 {
+    /* z-index: -1; */
+    position: absolute;
+    top: 170px;
+    left: 800px;
+    cursor: pointer;
+    width: 6%;
+}
+
+.p5 {
+    /* z-index: -1; */
+    position: absolute;
+    top: 300px;
+    left: 640px;
+    cursor: pointer;
+    width: 6%;
+}
+
+.p6 {
+    /* z-index: -1; */
+    position: absolute;
+    top: 300px;
+    left: 800px;
+    cursor: pointer;
+    width: 6%;
+}
+
+.ph h3 {
+    position: absolute;
+    /* background-color: white; */
+    width: 100%;
+    margin-left: 655px;
+    top: -55px;
+    font-size: 30px;
+    color: white;
+    /* background-color: red; */
+}
+.bolly{
+    visibility: hidden;
+    background-color: black;
+}
+.bolly2{
+    visibility: hidden;
+}
+.bolly3{
+    visibility: hidden;
+}
+.pop1{
+    position: absolute;
+    top: 170px;
+    left: 410px;
+    cursor: pointer;
+    width: 6%;
+}
+.pop2{
+    visibility: hidden;
+}
+.pop3{
+    visibility: hidden;
+}
+.pun1{
+    visibility: hidden;
+}
+.pun2{
+    visibility: hidden;
+}
+.pun3{
+    visibility: hidden;
+}
+.rock1{
+    visibility: hidden;
+}
+.rock2{
+    visibility: hidden;
+}
+.Punjabi{
+    visibility: hidden;
+}
+.Rockh{
+    visibility: hidden;
+}
+.Pop{
+    visibility: hidden;
+}
+
+
+footer {
+    position: fixed;
+    /* background-color: white; */
+    text-align: center;
+    padding: 3px;
+    margin-top: -530px;
+    margin-left: 500px;
+    color: white;
+    width: 30%;
+}
+
+/* Mobile Phone : Portrait */
+@media screen and (max-width: 480px) {
+    body {
+        /* background-color: white; */
+    }
+
+    .navbar ul {
+        /* background-color: red; */
+        position: fixed;
+        margin-top: 1px;
+        width: 825px;
+        margin-left: -11px;
+        height: 15%;
+    }
+
+    .navbar li {
+        margin-left: -10px;
+        margin-top: 5px;
+    }
+
+    .navbar li a {
+        /* margin-top: -20px; */
+        padding-left: 6px;
+        font-size: 25px;
+        padding-top: 20px;
+
+
+    }
+
+    .search {
+        width: 45%;
+        padding-left: 9px;
+        margin-top: -33px;
+        margin-right: 420px;
+        height: 11%;
+    }
+
+    .navbar input {
+        width: 100%;
+        margin-left: 30px;
+        padding-left: 26px;
+        font-size: 22px;
+    }
+
+    .navbar input[type="text"]::placeholder {
+        padding-left: 120px;
+        align-items: center;
+        font-size: 22px;
+    }
+
+    .wrapper {
+        /* visibility: hidden; */
+        /* position: -webkit-sticky;
+        position: sticky; */
+        margin-top: 990px;
+        margin-left: -5px;
+        width: 455px;
+    }
+
+    .img-area {
+        /* visibility: hidden; */
+        /* width: 0px; */
+        max-height: 1px;
+    }
+
+    .song-details .artist {
+        font-size: 15px;
+        opacity: 0.9;
+        line-height: 12px;
+        width: 206px;
+        margin-left: 111px;
+
+    }
+
+    .progress-area {
+        height: 6px;
+        width: 100%;
+        border-radius: 50px;
+        background: #f0f0f0;
+        cursor: pointer;
+        margin-top: 23px;
+    }
+
+    .fav {
+        color: black;
+        margin-left: 420px;
+        margin-top: -40px;
+        width: 2px;
+        height: 1px;
+    }
+
+    .controls {
+        size: 20px;
+    }
+
+     .bottombar ul {
+        /* visibility: hidden; */
+        background-color: red;
+        /* position: absolute; */
+        margin-top: 550px;
+        width: 150px;
+    }
+
+    .bottombar li {
+        list-style: none;
+        margin: 9px -48px;
+    }
+
+    .bottombar li a {
+        padding: 60px 3px;
+        text-decoration: none;
+        color: gray;
+        font-size: 20px;
+        margin: -7px;
+    }
+    .leftbar {
+        /* visibility: hidden; */
+        /* position: absolute; */
+        /* background-color: red; */
+        margin-top: 50px;
+        margin-left: -32px;
+
+    }
+    #left{
+        margin-top: 100px;
+    }
+    .leftbar li a {
+        padding: 3px 3px;
+        text-decoration: none;
+        color: gray;
+        font-size: 25px;
+    }
+
+    .Ind {
+        visibility: hidden;
+        margin-top: 50px;
+        margin-left: -375px;
+    }
+    .Ind img{
+        width: 120px;
+        height: 120px;
+    }
+
+    .th h3{
+        /* background-color: red; */
+        position: absolute;
+        visibility: hidden;
+        margin-top: 75px;
+        margin-left: -15px;
+        width: 180px;
+        padding-left: -20px;
+    }
+    .india h3{
+        position: absolute;
+        visibility:visible;
+        color: white;
+        /* background-color: red; */
+        margin-top: 189px;
+        margin-left: 20px;
+        font-size: 30px;
+}
+.Punjabi h3{
+    position: absolute;
+    visibility:visible;
+    color: white;
+    /* background-color: red; */
+    margin-top: 389px;
+    margin-left: 20px;
+    font-size: 30px;
+}
+.Pop h3{
+    position: absolute;
+    visibility:visible;
+    color: white;
+    /* background-color: red; */
+    margin-top: 589px;
+    margin-left: 20px;
+    font-size: 30px;
+}
+.Rockh h3{
+    position: absolute;
+    visibility:visible;
+    color: white;
+    /* background-color: red; */
+    margin-top: 789px;
+    margin-left: 20px;
+    font-size: 30px;
+}
+.artistsh h3{
+    position: absolute;
+    visibility:visible;
+    color: white;
+    /* background-color: red; */
+    margin-top: 989px;
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+
+
+    .today {
+        visibility: hidden;
+        margin-top: -230px;
+        margin-left: 70px;
+        
+    }
+    .today img{
+        width: 120px;
+        height: 120px;
+    }
+
+    .Top50 {
+        visibility: hidden;
+        margin-top: 50px;
+        margin-left: -85px;
+    }
+    .Top50 img{
+        width: 120px;
+        height: 120px;
+    }
+    .rock{
+        /* visibility: hidden; */
+        position: absolute;
+        margin-top: 715px;
+        margin-left: 75px;
+    }
+    .rock img{
+        width: 120px;
+        height: 120px;
+    }
+
+    .pop3 {
+        /* visibility: hidden; */
+        position: absolute;
+        margin-top: 645px;
+        margin-left: 335px;
+    }
+    .pop3 img{
+        width: 120px;
+        height: 120px;
+    }
+
+    .ms {
+        visibility: hidden;
+    }
+
+    .hits {
+        visibility: hidden;
+    }
+
+    .logo {
+        visibility: hidden;
+    }
+    .bolly{
+        visibility: visible;
+        position: absolute;
+        margin-top: 245px;
+        margin-left: 20px;
+
+    }
+    .bolly img{
+        width: 120px;
+        height: 120px;
+    }
+    .bolly2{
+        visibility: visible;
+        position: absolute;
+        margin-top: 245px;
+        margin-left: 175px;
+
+    }
+    .bolly2 img{
+        width: 120px;
+        height: 120px;
+    }
+    .bolly3{
+        visibility: visible;
+        position: absolute;
+        margin-top: 245px;
+        margin-left: 335px;
+
+    }
+    .bolly3 img{
+        width: 120px;
+        height: 120px;
+    }
+    .pun1{
+        visibility: visible;
+        position: absolute;
+        margin-top: 445px;
+        margin-left: 20px;
+
+    }
+    .pun1 img{
+        width: 120px;
+        height: 120px;
+    }
+    .pun2{
+        visibility: visible;
+        position: absolute;
+        margin-top: 445px;
+        margin-left: 175px;
+
+    }
+    .pun2 img{
+        width: 120px;
+        height: 120px;
+    }
+    .pun3{
+        visibility: visible;
+        position: absolute;
+        margin-top: 445px;
+        margin-left: 335px;
+
+    }
+    .pun3 img{
+        width: 120px;
+        height: 120px;
+    }
+    .pop1{
+        visibility: visible;
+        position: absolute;
+        margin-top: 645px;
+        margin-left: 20px;
+
+    }
+    .pop1 img{
+        width: 120px;
+        height: 120px;
+    }
+    .pop2{
+        visibility: visible;
+        position: absolute;
+        margin-top: 645px;
+        margin-left: 175px;
+
+    }
+    .pop2 img{
+        width: 120px;
+        height: 120px;
+    }
+    .rock1{
+        visibility: visible;
+        position: absolute;
+        margin-top: 845px;
+        margin-left: 20px;
+
+    }
+    .rock1 img{
+        width: 120px;
+        height: 120px;
+    }
+    .rock2{
+        visibility: visible;
+        position: absolute;
+        margin-top: 845px;
+        margin-left: 175px;
+
+    }
+    .rock2 img{
+        width: 120px;
+        height: 120px;
+    }
+    /* .a1{
+        visibility: visible;
+        position: absolute;
+        margin-top: 845px;
+        margin-left: 20px;
+
+    }
+    .a1 img{
+        width: 120px;
+        height: 120px;
+    } */
+    
+    
+
+    .p1 {
+        visibility: hidden;
+    }
+
+    .p2 {
+        visibility: hidden;
+    }
+
+    .p3 {
+        visibility: hidden;
+    }
+
+    .p4 {
+        visibility: hidden;
+    }
+
+    .p5 {
+        visibility: hidden;
+    }
+
+    .p6 {
+        visibility: hidden;
+    }
+
+    .ph {
+        visibility: hidden;
+    }
+    footer {
+        position: fixed;
+        text-align: center;
+        /* background-color: red; */
+        /* padding-bottom: 3px; */
+        bottom: 7px;
+        margin-left: 80px;
+        color: white;
+        height: 33px;
+    }
+    footer p{
+        padding-bottom: 2px;
+        visibility: hidden;
+    }
+}
+
+/* @media screen and (max-width: 1010px)
+  {    
+    body{
+        /* background-color: black;
+    }
+      .navbar ul{
+        position: fixed;
+          margin-top: 1px;
+          width: 159px;
+      }
+      .navbar li{
+          margin-left: -10px;
+          /* margin-top: 20px; 
+          
+      }
+      .navbar li a{
+          padding-left: 5px;
+          font-size: 25px;
+          padding-top: 40px;
+          
+          
+      }
+      .search{
+          width: 70%;
+          /* padding-left: 20px;
+          margin-left: -20px; 
+          margin-top: -7px;
+      }
+      .navbar input{
+          width: 100%;
+          margin-left: 20px;
+          padding-left: 12px;
+          font-size: 13px;
+      }
+      .navbar input[type="text"]::placeholder{
+          padding-left: 20px;
+          /* align-items: center;
+          font-size: 13px;
+      }
+      .logo{
+          position: fixed;
+          margin-top: -50px;
+      }  
+      .leftbar ul{
+        position: fixed;
+          margin-top: 270px;
+      }   
+      .leftbar li {
+          list-style: none;
+          margin-top: -6px;
+      }
+      
+      .leftbar li a {
+          padding: 3px 3px;
+          text-decoration: none;
+          color: gray;
+          font-size: 25px;
+      }
+      .bottombar ul{
+        position: fixed;
+          margin-top: 375px;
+      }
+      .bottombar li {
+          list-style: none;
+          margin: 19px -16px;
+      }
+      
+      .bottombar li a {
+          padding: 3px 3px;
+          text-decoration: none;
+          color: gray;
+          font-size: 25px;
+          margin: -7px;
+      }
+      .today img{
+        width: 0%;
+        height: 0%;
+      }
+      .ms img{
+        width: 0%;
+        height: 0%;
+      }
+      .th h3{
+        position: fixed;
+        /* background-color: white; */
+/* /* width: 80%; 
+         margin-left: 193px;
+        top: 90px;
+        font-size: 25px;
+        color: white;
+    }
+      .wrapper {
+          width: 340px;
+          padding: 25px 30px;
+          overflow: hidden;
+          border-radius: 15px;
+          background:var(--white);
+          box-shadow: 0px 6px 15px var(--lightbshadow);
+          margin-top: 80px;
+        margin-left: 418px;
+        position: fixed;
+        }
+        .Ind{
+            position: fixed;
+            /* margin: -372px 200px; 
+            top: 445px;
+            left: 240px;
+            cursor: pointer;
+            width: 5%;
+        }
+        .hits{
+            position: fixed;
+            cursor: pointer;
+            left: 240px;
+            width: 6%;
+            top: 585px;
+        }
+        .Top50{
+            left:240px;
+        }
+        .rock{
+            left: 240px;
+        }
+    
+
+      footer {
+          position: fixed;
+          text-align: center;
+          padding: 3px;
+          bottom: 2px;
+          color: white;
+          /* height: 40px;
+        }
+        
+ }*/

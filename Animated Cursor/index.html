@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="cursor">
+        <div class="click-animation">
+            <div class="shape circle big"></div>
+            <div class="shape circle small"></div>
+            <div class="shape triangle yellow"></div>
+            <div class="shape triangle green"></div>
+            <div class="shape disc"></div>
+
+        </div>
+    </div>
+
+    <!-- <section class="home">
+        <h1>Cursor Click Animation</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In rem minima non tempore sequi ab perferendis odio cupiditate repellendus commodi? Dolorem, itaque aperiam placeat cum ea corporis porro soluta, exercitationem nam commodi iure at quasi. Tempora deserunt nam aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias fuga ab similique cupiditate quae. Assumenda, maxime non atque doloribus ipsa pariatur nulla beatae nemo odio quibusdam. Exercitationem sequi quam nemo adipisci ipsa nam, totam inventore error delectus impedit quibusdam quos doloribus, quia expedita natus dolor aliquam, officia eaque! Quibusdam temporibus unde tenetur sunt inventore nihil, aut porro. Esse quia odio quisquam quo unde quae, aperiam nostrum reiciendis cumque hic laboriosam, aut sequi tempore dolore quasi exercitationem, totam alias beatae. Voluptas illo dolore aspernatur fugiat fugit, veniam ut natus consequatur ex praesentium consequuntur laborum, nisi rem recusandae obcaecati iure, doloremque quam!</p>
+    </section> -->
+    <script>
+        // js for animate the cursor on mouse click
+        const cursorAnimation = document.querySelector(".cursor");
+        const cursors = document.querySelectorAll(".cursor");
+
+        document.addEventListener("click", (e)=>{
+            let x = e.clientX;
+            let y = e.clientY;
+            cursorAnimation.style.top = y + "px";
+            cursorAnimation.style.left = x + "px";
+            cursors.forEach((cursor)=>{
+                cursor.classList.add("active");
+                function removeCursorActive(){
+                    cursor.classList.remove("active");
+                }
+                setTimeout(removeCursorActive, 1000);
+            });
+            let cursorClone = cursorAnimation.cloneNode(true);
+            document.querySelector("body").appendChild(cursorClone);
+            setTimeout(()=>{
+                cursorClone.remove();
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
