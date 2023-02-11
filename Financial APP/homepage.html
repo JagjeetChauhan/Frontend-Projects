@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Website</title>
+    <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="/images/myfinance-low-resolution-logo-color-on-transparent-background-1.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="/expense tool.html">SERVICES</a></li>
+                    <li><a href="#portfolio">PORTFORLIO</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <!-- <li><a href="#contact">SIGN-UP</a></li>
+                    <li><a href="#contact">SIGN-IN</a></li> -->
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+                <button type="submit" class="btn2"><a href="/Sign-up/registration.html">Sign-In</a></button>
+                <!-- <button type="submit" class="btn"><a href="registration.html">Sign-Up</a></button> -->
+            </nav>
+            
+            <hr class="hr1">
+            <div class="header-text">
+                <!-- <h1>MYFINANCE</h1>
+                <p>The Better Way To Start With<span> My Finance</span></p> -->
+                <div class="ha">
+                    <h1>We Provide<br>You</h1>
+                </div>
+                <hr>
+                <div class="hb">
+                    <h1>&nbsp;&nbsp;&nbsp;&nbsp;Freedom<br>Financially.</h1>
+                </div>
+                <div class="hc">
+                    <p>My Finance helps you to understand money.<br> Helps you to manage money in such a way that<br> you become Financially independent.<br>Helps you to understand stock market, how to<br> invest and generate extra money.</p>
+                </div>
+                <button type="submit" class="btn"><a href="/Sign-up/registration.html">Get Started</a></button>
+            </div>
+            <div class="saveposter">
+                <img src="/images/SAVE MONEY-1.png">
+            </div>
+            <div class="saveposter-1">
+                <img src="/images/2.png">
+            </div>
+        </div>
+        
+    </div>
+    <div class="copyright">
+        <p>copyright © MyFinance 2023</p>
+    </div>
+</body>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+</html>
